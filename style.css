@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: sans-serif;
+    /* background-color: #ecf0f3 ;  */
+}
+.Container{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Calculator{
+    background-color: rgba(145, 195, 219, 0.286);
+    padding:15px;
+    border-radius: 30px;
+    box-shadow: inset 5px 5px 12px #ffffff,
+                        5px 5px 12px rgba(0,0,0,.16);
+    border: none;
+    outline: none;
+    display:grid;
+    grid-template-columns: repeat(4,68px);
+
+}
+#result{
+    grid-column: span 4;
+    height: 48px;
+    width: 260px;
+    border: none;
+    background-color: rgba(52, 94, 191, 0.06);
+    box-shadow: -5px -5px 12px white,
+                    5px 5px 12px rgba(0,0,0,.16);
+    border-radius: 20px;
+    font-size: 45px;
+    text-align: end;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    padding: 18px;
+    color: gray;
+    
+}
+
+button{
+    height: 48px;
+    width: 48px;
+    margin:8px;
+    border-radius: 50%;
+    border: none;
+    background-color: rgba(52, 94, 191, 0.06);
+    box-shadow: -5px -5px 12px #ffffff,
+                    5px 5px 12px rgba(0,0,0,.16);
+    text-align: center;
+    color: gray;
+    font-size: 25px;
+    
+}
+
+#equal{
+    width: 113px;
+    border-radius: 50px;
+    background-color: rgba(255, 0, 60, 0.08);
+}
+
+#yellow{
+    background-color: rgba(210, 251, 59, 0.08);
+}
+#fff{
+    background-color: rgba(59, 65, 251, 0.15);
+}
+#myVideo{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+@media(min-aspect-ratio:16/9){
+    #myVideo{
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media(max-aspect-ratio:16/9){
+    #myVideo{
+        width: auto;
+        height: 100%;
+    }
+}
